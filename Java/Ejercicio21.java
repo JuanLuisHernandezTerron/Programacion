@@ -13,5 +13,4 @@ public class Ejercicio21 {
         System.out.println("Y la suma es:");
         System.out.println(primernumero + segundonumero);
     }
-
 }
