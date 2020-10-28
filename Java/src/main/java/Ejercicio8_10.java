@@ -7,18 +7,16 @@ public class Ejercicio8_10 {
         Scanner teclado;
         teclado=new Scanner(System.in);
 
-        int n;
+        int n=0;
 
-        System.out.println("Introduce el numero entero:");
-        n=teclado.nextInt();
-
-        while (n<=10)
+        while (n<=10){
             System.out.println("Introduce el numero entero:");
             n=teclado.nextInt();
-
-            for(int i = 1; i<=10; i++){
-            System.out.println(n + " * " + i + " = " + n*i);
+            for(int i = 1; i<=9; i++){
+                System.out.println(n + " * " + i + " = " + n*i);
         }
             System.out.println("Ejercicio Terminado");
     }
+    }
 }
+
