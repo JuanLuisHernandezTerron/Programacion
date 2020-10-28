@@ -7,26 +7,26 @@ public class Ejercicio82 {
         Scanner teclado;
         teclado = new Scanner(System.in);
 
-        int edades = 0;
-        int mayoreadad = 0;
+        int edad = 0;
+        int contador = 0;
+        int suma = 0;
+        int mayor_edad = 0;
 
-
-
-        while (edades!=0) {
+        while (edad >=0) {
             System.out.println("Dime una edad");
-            edades = teclado.nextInt();
+            edad = teclado.nextInt();
 
-            if (edades > 20) {
-                edades++;
+            if (edad >= 18) {
+                mayor_edad++;
             }
-            if (edades>17){
-                mayoreadad++;
+            if (edad>=0){
+                contador++;
+                suma+=edad;
             }
-            if
         }
-        System.out.println("El numero introducido es negativo, por eso el programa finaliza");
-        System.out.println("La suma de las edades es: "+edades );
-        System.out.println("La media de las edades es: " + edades / 2);
-        System.out.println("Hay" + mayoreadad + "mayores de edad");
+        System.out.println("El numero de alumnos introducido es de "+contador);
+        System.out.println("La suma de las edades es: "+suma);
+        System.out.println("La media de las edades es: " + suma/(double) contador);
+        System.out.println("Hay " + mayor_edad + " mayores de edad");
     }
 }
