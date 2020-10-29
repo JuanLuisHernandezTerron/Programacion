@@ -5,15 +5,17 @@ public class Ejercicio91 {
         Scanner teclado;
         teclado=new Scanner(System.in);
 
-        String palabra;
-        String palaba1;
-
         System.out.println("Dime una palabra");
-        palabra=teclado.nextLine();
+        String palabra=teclado.nextLine();
 
         System.out.println("Dime otra palabra");
-        palaba1=teclado.nextLine();
+        String palabra1=teclado.nextLine();
 
-        System.out.println();
+
+
+        if (palabra.length()>palabra1.length()){
+            palabra1=palabra;
+            System.out.println(palabra+"Es la mas corta");
+    }
     }
 }

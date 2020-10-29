@@ -3,6 +3,17 @@
 import java.util.Scanner;
 public class Ejercicio8_12 {
     public static void main(String[] args) {
-        for ()
+        Scanner teclado;
+        teclado = new Scanner(System.in);
+
+        int contador = 0;
+   
+
+
+
+
+
+
+
     }
 }

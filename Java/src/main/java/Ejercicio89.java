@@ -7,32 +7,17 @@ public class Ejercicio89 {
         Scanner teclado;
         teclado = new Scanner(System.in);
 
-        double altura =0;
-        int contador =0;
+        System.out.println("Dime la altura del arbol");
+        int altura = teclado.nextInt();
+        int altura_max = 0;
 
-        System.out.println("Dime las alturas de los arboles en cm");
-        altura = teclado.nextDouble();
+        while (altura > 0) {
 
+            if (altura > altura_max) {
+                altura_max = altura;
+            } altura = teclado.nextInt();
 
-        if (altura>=10);
-        contador ++;
-        System.out.println("El primer arbol es mayor");
-
-        if (altura>=20);
-        contador ++;
-        System.out.println("El segundo arbol es mayor");
-
-        if (altura>=30);
-        contador++;
-        System.out.println("El tercer arbol es mayor");
-
-
-        while (altura!=-1) {
-
-            System.out.println("Dime las alturas de los arboles en cm");
-            altura = teclado.nextDouble();
         }
-        System.out.println("El arbol mayor es: "+altura);
-        System.out.println("Finaliza el programa");
+        System.out.println("El arbol mas alto es "+altura_max);
     }
 }
