@@ -16,7 +16,7 @@ public class Ej_7 {
             if (numero%i ==0)
                 contador ++;
         }
-        if (contador==2){
+        if (contador<=2){
         System.out.println("Es primo");
     }else{
             System.out.println("No es primo");
