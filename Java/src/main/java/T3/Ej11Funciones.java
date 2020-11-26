@@ -12,9 +12,5 @@ public class Ej11Funciones {
 
         System.out.println("Dime a que numero quieres elevar");
         double n = teclado.nextInt();
-
-        do {
-            
-        }
     }
 }
